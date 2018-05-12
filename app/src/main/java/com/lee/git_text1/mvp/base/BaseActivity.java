@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import com.lee.git_text1.R;
+
 import butterknife.ButterKnife;
 
 /**
@@ -28,12 +30,11 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
     }
 
     //初始化view
-    protected void initView() {
-    }
+    public abstract void initView();
 
     //初始化数据
-    protected void initData() {
-    }
+    public abstract void initData();
+
 
     /**
      * activity跳转（无参数）
