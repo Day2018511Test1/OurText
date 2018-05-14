@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 27
@@ -49,15 +49,15 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:27.0.0-alpha1'
     //butterknife
     implementation 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-implementationr:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     //底部导航
     implementation 'com.android.support:design:27.1.0'
     //eventbus
     implementation 'org.greenrobot:eventbus:3.0.0'
     //smartrefresh
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-7'
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+//    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
-repositories {
-    mavenCentral()
-}
+//reposito*ries {
+//    mavenCentral()
+//}
