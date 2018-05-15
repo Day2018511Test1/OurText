@@ -5,8 +5,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mvp.view.activities.MainActivity">
+    tools:context=".mvp.view.activities.LoginActivity">
+    <include
+        android:id="@+id/login_head"
+        layout="@layout/include_item"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#E4E4E4"
+        android:layout_below="@+id/login_head">
+        <ImageView
+            android:layout_width="@dimen/x203"
+            android:layout_height="@dimen/y58"
+            android:background="@mipmap/u16"
+            android:layout_marginLeft="@dimen/x98"
+            android:layout_marginTop="@dimen/y88"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y36"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginLeft="@dimen/x20">
+            <ImageView
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/y30"
+                android:background="@mipmap/u6"
+                android:layout_marginLeft="@dimen/x10"/>
+            <EditText
+                android:id="@+id/login_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入手机号/QQ邮箱"
+                android:background="@null"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y36"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20">
+            <ImageView
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/y30"
+                android:background="@mipmap/u6"
+                android:layout_marginLeft="@dimen/x10"/>
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入密码"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/x10"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y20"
+            >
+            <TextView
+                android:id="@+id/forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="忘记密码?"
+                android:textColor="#000000"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_centerVertical="true"/>
+            <Button
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="注册"
+                android:background="#D9F1D9"/>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y40"
+            android:text="登录"
+            android:background="@drawable/login_down"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/y20"/>
+    </LinearLayout>
 
 
 

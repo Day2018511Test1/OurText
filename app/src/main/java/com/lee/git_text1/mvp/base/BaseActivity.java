@@ -23,7 +23,7 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mContext = this;
-        ButterKnife.bind(this);
+//        ButterKnife.bind(this);
         initView();
         initData();
 
