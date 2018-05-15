@@ -1,7 +1,5 @@
 package com.lee.git_text1.mvp.view.activities;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 
 import com.lee.git_text1.R;
